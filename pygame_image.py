@@ -37,6 +37,8 @@ def main():
         screen.blit(bg2_img, [-x+4800, 0])
         screen.blit(k_img, k_rct)
         pg.display.update()
+        if key_lst[pg.K_RIGHT]:
+            tmr += 1
         tmr += 1        
         clock.tick(200)
 
